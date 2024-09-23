@@ -1,0 +1,85 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* Calculator container styling */
+.calculator {
+    width: 300px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Display screen styling */
+.display {
+    background-color: #222;
+    color: #fff;
+    font-size: 2rem;
+    padding: 20px;
+    text-align: right;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    min-height: 60px;
+}
+
+/* Button container styling */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* Button styling */
+.btn {
+    padding: 20px;
+    font-size: 1.2rem;
+    border: 1px solid #555;
+    background-color: #444;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+/* Operator button styling */
+.operator {
+    background-color: #fe9241;
+}
+
+.operator:hover {
+    background-color: #e58332;
+}
+
+/* Equal button styling */
+.equal {
+    grid-column: span 2;
+    background-color: #27ae60;
+}
+
+.equal:hover {
+    background-color: #219150;
+}
+
+/* Clear and Delete button styling */
+#clear, #delete {
+    background-color: #e74c3c;
+}
+
+#clear:hover, #delete:hover {
+    background-color: #c0392b;
+}
